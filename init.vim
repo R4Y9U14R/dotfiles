@@ -7,8 +7,9 @@
 :set shortmess+=F
 :set termguicolors
 :set bg=dark
+:set cursorline
 
-call plug#begin('./plugged/')
+call plug#begin('~/.config/nvim/plugged')
 
 Plug 'https://github.com/preservim/nerdtree'
 Plug 'https://github.com/gruvbox-community/gruvbox'
