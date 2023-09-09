@@ -22,7 +22,7 @@ Plug 'https://github.com/lukas-reineke/indent-blankline.nvim'
 Plug 'https://github.com/romgrk/barbar.nvim'
 Plug 'https://github.com/nvim-tree/nvim-web-devicons'
 Plug 'https://github.com/tpope/vim-commentary'
-Plug 'https://github.com/terryma/vim-multiple-cursors'
+Plug 'https://github.com/mg979/vim-visual-multi'
 
 call plug#end()
 
@@ -30,9 +30,9 @@ nnoremap <C-f> :NERDTreeToggle<CR>
 nnoremap <C-t> :TerminalSplit bash<CR>
 
 :colorscheme gruvbox
-"let g:gruvbox_italic = 1
-"let g:gruvbox_contrast_dark = 'light'
-"hi Normal guibg=#1d2021 ctermbg=234
+" let g:gruvbox_italic = 1
+" let g:gruvbox_contrast_dark = 'light'
+" hi Normal guibg=#1d2021 ctermbg=234
 
 let g:airline_theme='gruvbox'
 
