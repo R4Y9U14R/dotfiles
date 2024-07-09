@@ -1,3 +1,5 @@
+" THIS FILE IS NOW LEGACY.
+
 :set number
 :set autoindent
 :set tabstop=4
