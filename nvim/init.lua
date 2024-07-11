@@ -15,3 +15,5 @@ vim.opt.smartindent = true
 vim.opt.clipboard = "unnamedplus"
 vim.opt.colorcolumn = "80"
 
+vim.cmd('colorscheme catppuccin-mocha')
+

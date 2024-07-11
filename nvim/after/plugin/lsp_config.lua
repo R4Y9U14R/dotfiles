@@ -1,3 +1,5 @@
+local navic = require("nvim-navic")
+
 require("mason").setup()
 require("mason-lspconfig").setup({
     ensure_installed = {
@@ -27,6 +29,10 @@ local lspconfig = require('lspconfig')
 
 for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup {
-        capabilities = capabilities
+        capabilities = capabilities,
+        on_attatch = function(client, bufnr)
+           navic.attach(client, bufnr)
+        end
     }
 end
+

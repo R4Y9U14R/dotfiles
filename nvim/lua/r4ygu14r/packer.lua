@@ -52,18 +52,29 @@ return require('packer').startup(function(use)
     }
 
     use {
+        'adelarsq/image_preview.nvim',
+        config = function()
+            require("image_preview").setup()
+        end
+    }
+    
+    use {
+        'SmiteshP/nvim-navic',
+        requires = "neovim/nvim-lspconfig",
+        config = function()
+            require('nvim-navic').setup()
+        end
+    }
+
+    use {
         "lukas-reineke/indent-blankline.nvim",
         config = function()
             require('ibl').setup()
         end
     }
-
-    use {
-        'EdenEast/nightfox.nvim',
-        config = function()
-            vim.cmd('colorscheme carbonfox')
-        end
-  }
+    
+    use { "catppuccin/nvim", as = "catppuccin" }
+    use { "ellisonleao/gruvbox.nvim" }
 
   use({'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}})
 end)
