@@ -57,7 +57,11 @@ return require('packer').startup(function(use)
             require("image_preview").setup()
         end
     }
-    
+
+    use 'tpope/vim-fugitive'
+
+    use 'lewis6991/gitsigns.nvim'
+
     use {
         'SmiteshP/nvim-navic',
         requires = "neovim/nvim-lspconfig",
@@ -66,16 +70,16 @@ return require('packer').startup(function(use)
         end
     }
 
-    use {
-        "lukas-reineke/indent-blankline.nvim",
-        config = function()
-            require('ibl').setup()
-        end
-    }
-    
+    -- use {
+    --     "lukas-reineke/indent-blankline.nvim",
+    --     config = function()
+    --         require('ibl').setup()
+    --     end
+    -- }
+    -- 
     use { "catppuccin/nvim", as = "catppuccin" }
     use { "ellisonleao/gruvbox.nvim" }
 
-  use({'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}})
+    use({'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}})
 end)
 

@@ -1,6 +1,6 @@
 require("bufferline").setup {
     options = {
-        separator_style = "slanted",
+        separator_style = "sloped",
         highlight = {underline = true, sp = "blue"},
     }
 }
